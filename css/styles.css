@@ -3,7 +3,7 @@ body {
 }
 
 h1 {
-  color: red;
+  color: #F95E00;
   text-align: center;
   font-size: 60px;
   text-shadow: 2px 2px black;
@@ -49,17 +49,7 @@ h2 {
     text-decoration: none;
 }
 
-.btn1 {
-    float:left;
-    margin-left: 50px;
-}
 
-
-
-.btn3 {
-    float:right;
-    margin-right: 50px;
-}
 .highlighted {
   -webkit-box-shadow: 0 0 15px #ff531a;
   -moz-box-shadow: 0 0 15px #ff531a;
@@ -81,7 +71,7 @@ footer {
   font-size: 20px;
 }
 
-#q2, #q3, #q4, #q5, #q6, #q7, #q8, #q9, #q10, #result {
+#q2, #q3, #q4, #q5, #q6, #q7, #q8, #q9, #q10, #result, #try {
   display: none;
 }
 

@@ -181,25 +181,27 @@ $(document).ready(function () {
   });
   $('.A10').click(function() {
     $('.A10').unbind('mouseenter mouseleave');
+    //adds a sentence to result depending on the score
     $('#result').html(function () {
       if(score > 7) {
-        $('#result').html("<p>Fantastic score you really know your Capitals</p>")
+        $('#result').html("<p>Fantastic score you really know your Capitals!</p>")
       }
       else if (score < 8 && score > 4) {
-        $('#result').html("<p>Fairly disppointing but not too bad, give yourself a slap on the back</p>")
+        $('#result').html("<p>Fairly disppointing but not too bad, give yourself a slap on the back.</p>")
       }
       else {
-        $('#result').html("<p>Absoultly terrible, so so bad. Next time don't try</p>")
+        $('#result').html("<p>Absoultly terrible, so so bad. Next time don't try!</p>")
       }
     });
     $("html, body").animate({ scrollTop: $(document).height() }, 1000);
     $('#result').delay(250).fadeIn('slow');
+    //adding a new footer with final score in larger size and different colours
     $('footer').html("<footer style='font-size:30px;color:yellow;'>Final Score:<br><span style='font-size:35px;color:yellow;' id='score'></span></footer>");
     $('#score').html(score);
     $('footer').css('background-color','black');
     $('footer').height('85px');
     $('footer').width('400px');
-    
+
 
   });
   $('.A10.wrong').click(function() {
@@ -207,6 +209,7 @@ $(document).ready(function () {
     $('.A10.correct').css('background-color', '#4DFF00')
     $('.A10').unbind('click');
   });
+
 
 
 
